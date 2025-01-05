@@ -1,0 +1,18 @@
+name: Money
+version: '1.0-SNAPSHOT'
+main: org.ibear.money.Money
+api-version: '1.21'
+authors: [ iBear ]
+website: ibear.co
+commands:
+  mymoney:
+    description: Check your money balance
+    usage: /mymoney
+  money:
+    description: Manage player money (set, add, del)
+    usage: /money set|add|del <player> <amount>
+    permission: moneyplugin.manage
+permissions:
+  moneyplugin.manage:
+    description: Allows the user to manage other players' money (set, add, del)
+    default: op
